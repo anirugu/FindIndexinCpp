@@ -2,9 +2,17 @@
 //
 
 #include <iostream>
+#include <vector>
+
+using namespace std;
 
 int main()
 {
+    auto test1= vector<int>{54, 32, 66, 77, 88};
+
+    auto result = find(test1.begin(), test1.end(), 77);
+
+    int index = result - test1.begin();
     std::cout << "Hello World!\n";
 }
 
